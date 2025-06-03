@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baťova škola práce</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/_custom.css">
+  <link rel="icon" href="../images/logo.png">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+    <div class="container-fluid">
+      <a href="main.html" class="btn p-0 border-0 bg-transparent">
+        <img src="../images/logo.png" height="50px" width="50px" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto d-flex flex-lg-row flex-column gap-lg-5 gap-2 fs-4 fw-bold">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Aktuality</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Historie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Současnost</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Fotogalerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminModal">
+          Podpořte nás
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Podpořte nás button celé -->
+<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Platba kartou online</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="bata@seznam.cz">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Číslo karty</label>
+            <input class="form-control" id="exampleInputPassword1" placeholder="1234 5678 9012 3456">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="end" class="form-label">Konec platnosti</label>
+              <input type="text" class="form-control" id="end" placeholder="MM/RR">
+            </div>
+            <div class="col-md-6">
+              <label for="code" class="form-label">Kód CVC/CVV</label>
+              <input type="text" class="form-control" id="code" placeholder="3 číslice">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="cardName" class="form-label">Jméno na kartě</label>
+            <input class="form-control" id="cardName" placeholder="Jan Novák">
+          </div>
+          <div class="mb-3">
+            <label for="cena" class="form-label">Částka kolik chcete přispět</label>
+            <div class="input-group">
+              <span class="input-group-text">Kč</span>
+              <input type="number" class="form-control" id="cena">
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Potrvzuji</label>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <a class="nav-link text-white" href="main.html">Platba</a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="welcome-info">
+    <div class="container text-center">
+      <h1 class="uvod">Baťova <br>škola práce </h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="mt-5 pt-5">Aktuality</h2>
+      <div class="row gx-5 gy-5">
+
+        <div class="col-lg-4">
+          <div class="card mt-5">
+            <img src="../images/ptak.jpg">
+            <div class="card-body">
+              <h5 class="card-title">14.května 2025</h5>
+              <p class="card-text">Posluchači Univerzity třetího věku vystavují ve Zlíně obrazy na téma ptactvo.Křídla v obrazech. Tak se jmenuje originální výstava, která představuje výtvarná díla posluchačů oboru výtvarné tvorby</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

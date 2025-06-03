@@ -1,0 +1,14 @@
+.welcome-info {
+    background: url("../images/úvod-images.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.uvod {
+    font-size: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
