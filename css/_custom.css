@@ -1,14 +1,46 @@
 .welcome-info {
     background: url("../images/úvod-images.jpg");
-    height: 80vh;
+    height: 85vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     color: #ffffff;
+    opacity: 0.9;
 }
 
 .uvod {
     font-size: 200px;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.podrzitko {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.podrzitko::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    transition: transform 0.4s ease;
+}
+
+.podrzitko:hover::after {
+    transform: translateX(-50%) scaleX(1)
+}
+
+.btn {
+    background-color: orange;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ae7200;
 }
