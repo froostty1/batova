@@ -44,3 +44,13 @@
 .btn:hover {
     background-color: #ae7200;
 }
+
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
